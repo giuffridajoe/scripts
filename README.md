@@ -6,3 +6,6 @@ sox-script.sh -
 
 myscript.ahk - 
   this script remaps keyboard keys to have other functions. Needs the AutoHotKey app to run
+  
+split-file.sh - 
+  this script will take a file as an argument and break it up into smaller ones. Record size and name of smaller files is passed into the   split command
