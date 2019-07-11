@@ -11,6 +11,7 @@ This script uses the sox command line utility to concatenate multiple audio file
    sox $column1 $column2 /path to file/$column3;
    done < /directory to save new file/sox-wavs.txt
 ```
+<br><br>
 
 *_split-file.sh_* - 
 This script will take a file as an argument and break it up into smaller ones. Records per file and the name of smaller files is passed into the split command.
@@ -28,7 +29,7 @@ This script will take a file as an argument and break it up into smaller ones. R
    #iterate over each new file and append a file extension
    for file in test*; do mv -- "$file" "$file.txt"; done
 ```
-
+<br><br>
 
 *_myscript.ahk_* - 
 This script remaps keyboard keys to have other functions. Needs the AutoHotKey app to run
