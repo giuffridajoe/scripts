@@ -1,7 +1,7 @@
 # A collection of shell scripts
 
 *__sox-script.sh__* - 
-This script uses the sox command line utility to concatenate multiple audio files into one file. It reads two columns from a file, concatenates them together and gives it a name equal to whatever is in the third column. Then it saves it somewhere. 
+Uses the sox command line utility to concatenate multiple audio files into one file. It reads two columns from a file, concatenates them together and gives it a name equal to whatever is in the third column. Then it saves it somewhere. 
 
 ```
    #! /bin/bash
@@ -14,7 +14,7 @@ This script uses the sox command line utility to concatenate multiple audio file
 <br><br>
 
 *__split-file.sh__* - 
-This script will take a file as an argument and break it up into smaller ones. Records per file and the name of smaller files is passed into the split command.
+Takes a file as an argument and break it up into smaller ones. Records per file and the name of smaller files is passed into the split command.
 
 ```
    #!/bin/bash
@@ -32,4 +32,7 @@ This script will take a file as an argument and break it up into smaller ones. R
 <br><br>
 
 *__myscript.ahk__* - 
-This script remaps keyboard keys to have other functions. Needs the AutoHotKey app to run
+Remaps keyboard keys to have other functions. Needs the AutoHotKey app to run
+
+*__reanme.sh__* - 
+Renames a specified piece of a file to something else
