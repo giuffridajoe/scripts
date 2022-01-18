@@ -16,7 +16,7 @@ git log --oneline  #view commits of current branch
 git log --after=["date"] --before=["date"]  #shows commits within specified range
 git log --after="yesterday"  #shows commits from yesterday only
 git log --after="today"  #shows commits from today only
-git log --before="10 day ago"  #shows commits from the last 10 days 
+git log --before="10 day ago"  #shows commits from the last 10 days
 git log --after="1 week ago"  #shows commits from the last week
 git log --after="2 month ago"  #shows commits from 2 months ago
 git log -p  #shows the log with diff changes
@@ -33,8 +33,8 @@ scp {file1,file2} [username]@[host name]:[path] #copies multiple files from loca
 scp *[file pattern] [username]@[host name]:[path] #copies multiple files from local to remote
 scp [username]@[host name]:[path]\{file1,file2,file3\} .  #copies multiple files from remote to local
 git commit --amend  #adds staged changes to the previous unpushed commit
-ls -1 | wc -l 
-  # -1 (that's a ONE) only one entry per line. Change to -1a to include hidden files. 
+ls -1 | wc -l
+  # -1 (that's a ONE) only one entry per line. Change to -1a to include hidden files.
   # | pipe output onto...
   # wc "wordcount"
   # -l count lines
@@ -44,7 +44,7 @@ ls -1 | wc -l
 git branch -m [old branch name] [new branch name]
 #rename step 2: delete old branch on remote
 git push origin --delete [old branch name]
-#rename step 3: push the new branch to remote 
+#rename step 3: push the new branch to remote
 git push origin [new branch name]
 #rename step 4: reset the upstream branch for the [new branch] local branch
 git push origin -u [new branch name]
