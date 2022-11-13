@@ -1,9 +1,22 @@
 alias gc="git commit -am"
 alias gs="git status"
-gcp() {
-        git commit -am "'$1'" && git push;
+alias gl="git log -n 25 --pretty='format:%C(yellow)%ci %Creset%C(bold green)%h %Creset%s %Cred%cn'"
+alias gp="git pull"
+alias gchdp="git checkout develop && gp"
+alias gch="git checkout"
+
+gb() {
+        git checkout -b "$1";
 }
-alias gl="git log --oneline"
+
+gcp() {
+        git commit -am "$1" && git push;
+}
+
 find-projects() {
         python3 /home/jgiuffrida/find-projects.py "$1";
+}
+
+cheatsheet() {
+        grep "$1" -A1 -B1 /home/jgiuffrida/cheatsheet.txt;
 }
