@@ -13,11 +13,11 @@ for line in fileinput.input(['my-data-file.txt']):
 		
 	counter += 1
 	jsonStr = {
-		"vendorAppointmentId": str(uuid.uuid4()),
-		"firstName": "FNAME" + str(counter),
-		"lastName": "LNAME" + str(counter),
-		"emailAddress": str(line).replace("\n",""),
-		"appointmentDateTime": "2024-07-13T00:00:00Z"
+		"key1": str(uuid.uuid4()),
+		"key2": "FNAME" + str(counter),
+		"key3": "LNAME" + str(counter),
+		"key4": str(line).replace("\n",""),
+		"key5": "2024-07-13T00:00:00Z"
 	}
 	jsonStr = [jsonStr]
 	jsonArray = json.dumps(jsonStr, indent=2)
